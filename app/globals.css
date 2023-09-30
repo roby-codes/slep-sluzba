@@ -23,7 +23,12 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 72.2% 50.6%;
-    --radius: 0.3rem;
+    --radius: 0.5rem;
+
+    --theme-lightblue: #4755da;
+    --theme-blue: #3341c2;
+    --theme-darkblue: #1d2aa0;
+    --theme-yellow: #ca8a04;
   }
 
   .dark {

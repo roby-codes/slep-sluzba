@@ -1,13 +1,23 @@
+import Header from "@/components/header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: ["200", "300", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Šlep Služba - Veliko Gradište",
   description:
-    "Šlep služba Veliko Gradište je posvećena pružanju najkvalitetnijih šlep usluga našim korisnicima. Veliko iskustvo u ovoj oblasti osigurava da je vaše vozilo u sigurnim rukama. Ukažite nam vaše poverenje, a mi ćemo vam zagarantovati pouzdanu uslugu. Kontaktirajte nas već danas i spoznajte mir koji vam donosi saznanje da ste u dobrim rukama.",
+    "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
+  applicationName: "Šlep Služba - Veliko Gradište",
+  openGraph: {
+    title: "Šlep Služba - Veliko Gradište",
+    images: ["/public/assets/images/red-tow-truck.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -16,8 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="!scroll-smooth">
+      <body className={`${kanit.className} font-light bg-slate-50`}>
+        <div className="fixed -z-10 rounded-full top-[3rem] md:top-[7rem] right-[18rem] md:right-[26rem] lg:right-[30rem] xl:right-[36rem] h-[17rem] w-[14rem] lg:h-[25rem] lg:w-[21rem] xl:h-[30rem] xl:w-[25rem] blur-[8rem] lg:blur-[10.5rem] xl:blur-[12.5rem] bg-[--theme-blue]"></div>
+        <div className="fixed -z-10 rounded-full top-[15rem] md:top-[25rem] right-[2rem] md:right-[8rem] lg:right-[10rem] xl:right-[12rem] h-[17rem] w-[14rem] lg:h-[25rem] lg:w-[21rem] xl:h-[30rem] xl:w-[25rem] blur-[8rem] lg:blur-[10.5rem] xl:blur-[12.5rem] bg-[--theme-yellow]"></div>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

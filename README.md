@@ -6,5 +6,6 @@
 - Next.JS
 - TypeScript
 - Tailwind CSS
+- Framer Motion
 
 > Developed By **[Robert Kovacs](https://robycodes.com)** - Find my other projects on **[robycodes.com](https://robycodes.com)**
