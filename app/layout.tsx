@@ -1,8 +1,9 @@
-import Header from "@/components/header";
-import "./globals.css";
 import type { Metadata } from "next";
+import Header from "@/components/header";
 import { Kanit } from "next/font/google";
 import Footer from "@/components/footer";
+import CallButton from "@/components/ui/call-button";
+import "./globals.css";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -10,7 +11,7 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://slep-sluzba.robycodes.com/"),
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_ROOT_URL}`),
   title: "Šlep Služba - Veliko Gradište",
   description:
     "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <CallButton />
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import DesktopNav from "./desktop-nav";
 import MobileNav from "./mobile-nav";
 
 const Header = () => (
-  <header className="absolute z-[999] top-0 left-0 w-full">
+  <header className="fixed z-[999] top-0 left-0 w-full">
     <ActiveLinkContextProvider>
       <MobileNav />
       <DesktopNav />

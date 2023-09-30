@@ -17,14 +17,15 @@ import RedTowTruckImage from "@/public/assets/images/red-tow-truck.jpg";
 import GrayTowTruckImage from "@/public/assets/images/gray-tow-truck.jpg";
 
 const IntroSection = () => (
-  <section className="flex justify-center py-52 lg:py-60 px-8 relative z-10 overflow-hidden">
-    <div className="absolute h-full w-full inset-0 bg-black/60">
+  <section className="flex justify-center pt-40 pb-48 lg:py-60 px-8 relative z-10 overflow-hidden">
+    <div className="absolute h-full w-full inset-0 bg-black/60 pointer-events-none select-none">
       <Image
-        className="h-full w-full -z-[10]"
+        className="h-full w-full -z-[10] pointer-events-none select-none"
         src={RedTowTruckImage}
         layout="fill"
         objectFit="cover"
         priority={true}
+        draggable={false}
         alt="Red Tow Truck Image"
       />
     </div>
@@ -97,6 +98,7 @@ const IntroSection = () => (
         <a
           className="flex py-3 px-5 gap-2 rounded-md items-center uppercase font-semibold text-white bg-[--theme-blue] hover:bg-[--theme-lightblue] hover:-rotate-2 hover:scale-110 duration-200"
           href="tel:0651185542"
+          aria-label="Pozovite Sada"
         >
           <FiPhoneCall className="h-5 w-5" /> Pozovite Sada
         </a>
@@ -222,20 +224,23 @@ const ContactSection = () => (
         >
           <a
             className="flex py-3 px-5 gap-2 rounded-md items-center uppercase font-semibold text-white bg-[--theme-blue] hover:bg-[--theme-lightblue] hover:-rotate-2 hover:scale-110 duration-200"
-            href="tel:"
+            href="tel:0651185542"
+            aria-label="Pozovite Sada"
           >
             <FiPhoneCall className="h-5 w-5" /> Pozovite
           </a>
         </button>
       </div>
       <div className="flex-1 pt-6 p-0">
-        <Image
-          className="rounded-md"
-          src={GrayTowTruckImage}
-          alt="Gray Tow Truck Image"
-          placeholder="blur"
-          aria-placeholder="Gray Tow Truck Image"
-        />
+        <div className="rounded-md overflow-hidden">
+          <Image
+            className="hover:scale-105 duration-200"
+            objectFit="cover"
+            src={GrayTowTruckImage}
+            alt="Gray Tow Truck Image"
+            placeholder="blur"
+          />
+        </div>
       </div>
     </div>
   </section>

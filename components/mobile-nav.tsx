@@ -1,28 +1,83 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useActiveLinkContext } from "@/context/active-link-context";
 import { pageLinks } from "@/lib/data";
-import { FiPhoneCall } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
 import { cn } from "@/lib/utils";
 
 const MobileNav = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const { url } = useActiveLinkContext();
 
   return (
-    <nav className="p-4 md:hidden w-full justify-center items-center bg-white">
-      <ul className="max-w-5xl flex-1 flex items-center gap-4">
-        <ul className="flex-1 flex justify-start gap-4"></ul>
+    <nav className="md:hidden w-full bg-white relative">
+      <ul className="p-4 flex-1 flex bg-white">
+        <li className="flex-1 flex items-center">
+          <span className="text-xl font-medium">065 118 55 42</span>
+        </li>
         <li>
-          <a
-            className="flex py-3 px-3 gap-2 rounded-md items-center uppercase font-semibold text-white bg-[--theme-blue] hover:bg-[--theme-lightblue] hover:-rotate-2 hover:scale-110 duration-200"
-            href="tel:0651185542"
+          <button
+            className="flex p-2 gap-2 rounded-md items-center uppercase font-semibold bg-[--theme-blue] hover:bg-[--theme-lightblue] duration-200 focus:outline-none"
+            aria-label="Pozovite Sada"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
           >
-            <FiPhoneCall className="h-5 w-5" />
-          </a>
+            {menuOpen ? (
+              <AiOutlineClose className="h-6 w-6 text-white" />
+            ) : (
+              <FiMenu className="h-6 w-6 text-white" />
+            )}
+          </button>
         </li>
       </ul>
+      <AnimatePresence>
+        {menuOpen ? (
+          <motion.div
+            className="absolute -z-10 left-0 top-full w-full p-4 bg-[--theme-blue] bg-opacity-20 border-b border-white/50"
+            initial={{
+              x: 800,
+            }}
+            animate={{
+              x: 0,
+            }}
+            exit={{
+              x: 800,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+          >
+            <ul className="flex flex-col gap-2">
+              {pageLinks.map((link, index) => (
+                <li key={index} className="flex-1 relative p-2 z-10">
+                  <Link
+                    className={cn(
+                      "w-full px-4 cursor-pointer transition text-white uppercase font-medium",
+                      {
+                        "text-black": link.url === url,
+                      }
+                    )}
+                    href={link.url}
+                  >
+                    {link.name}
+                  </Link>
+                  {link.url === url && (
+                    <motion.span
+                      layoutId="activeLinkMobile"
+                      className="absolute inset-0 bg-white rounded-md -z-[5]"
+                    ></motion.span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </nav>
   );
 };
