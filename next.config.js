@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ["slep-sluzba.robycodes.com"],
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
