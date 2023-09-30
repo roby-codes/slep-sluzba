@@ -10,6 +10,7 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://slep-sluzba.robycodes.com/"),
   title: "Šlep Služba - Veliko Gradište",
   description:
     "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     title: "Šlep Služba - Veliko Gradište",
     description:
       "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
-    images: ["/public/assets/images/red-tow-truck.jpg"],
+    images: ["/assets/images/red-tow-truck.jpg"],
   },
 };
 
