@@ -24,6 +24,7 @@ const IntroSection = () => (
         src={RedTowTruckImage}
         layout="fill"
         objectFit="cover"
+        priority={true}
         alt="Red Tow Truck Image"
       />
     </div>
@@ -105,9 +106,9 @@ const IntroSection = () => (
 );
 
 const FeaturesSection = () => (
-  <section className="flex justify-center py-32 lg:pt-0 px-8 bg-slate-50 bg-opacity-75 relative z-20">
-    <div className="max-w-5xl absolute w-full px-8 xl:px-0 -top-[6.75rem] left-1/2 -translate-x-1/2  flex flex-col md:flex-row justify-center items-center md:gap-4 gap-0">
-      <div className="flex justify-center gap-5 flex-wrap">
+  <section className="flex justify-center py-32 lg:pt-0 bg-slate-50 bg-opacity-75 relative z-20">
+    <div className="max-w-5xl absolute w-full xl:px-0 -top-[6.75rem] left-1/2 -translate-x-1/2  flex flex-col md:flex-row justify-center items-center md:gap-4 gap-0">
+      <div className="flex-1 flex justify-center gap-8 flex-wrap">
         <motion.div
           className="flex-1 min-w-[300px] max-w-xs"
           initial={{

@@ -18,7 +18,7 @@ const DesktopNav = () => {
             <li key={index} className="relative py-6">
               <Link
                 className={cn(
-                  "py-6 px-4 cursor-pointer transition text-black/50",
+                  "py-6 px-4 cursor-pointer transition text-black/50 uppercase",
                   {
                     "text-[--theme-blue]": link.url === url,
                   }

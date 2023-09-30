@@ -13,9 +13,10 @@ export const metadata: Metadata = {
   title: "Šlep Služba - Veliko Gradište",
   description:
     "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
-  applicationName: "Šlep Služba - Veliko Gradište",
   openGraph: {
     title: "Šlep Služba - Veliko Gradište",
+    description:
+      "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
     images: ["/public/assets/images/red-tow-truck.jpg"],
   },
 };

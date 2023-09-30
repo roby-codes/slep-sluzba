@@ -11,31 +11,9 @@ const MobileNav = () => {
   const { url } = useActiveLinkContext();
 
   return (
-    <nav className="px-4 md:hidden w-full justify-center items-center bg-white">
+    <nav className="p-4 md:hidden w-full justify-center items-center bg-white">
       <ul className="max-w-5xl flex-1 flex items-center gap-4">
-        <ul className="flex-1 flex justify-start gap-4">
-          {pageLinks.map((link, index) => (
-            <li key={index} className="relative py-6">
-              <Link
-                className={cn(
-                  "py-6 px-4 cursor-pointer transition text-black/50",
-                  {
-                    "text-[--theme-blue]": link.url === url,
-                  }
-                )}
-                href={link.url}
-              >
-                {link.name}
-              </Link>
-              {link.url === url && (
-                <motion.span
-                  layoutId="activeLink"
-                  className="absolute bottom-0 left-0 w-full border-b-[2.5px] border-[--theme-blue]"
-                ></motion.span>
-              )}
-            </li>
-          ))}
-        </ul>
+        <ul className="flex-1 flex justify-start gap-4"></ul>
         <li>
           <a
             className="flex py-3 px-3 gap-2 rounded-md items-center uppercase font-semibold text-white bg-[--theme-blue] hover:bg-[--theme-lightblue] hover:-rotate-2 hover:scale-110 duration-200"
