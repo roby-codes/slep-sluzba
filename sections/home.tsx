@@ -233,6 +233,8 @@ const ContactSection = () => (
           className="rounded-md"
           src={GrayTowTruckImage}
           alt="Gray Tow Truck Image"
+          placeholder="blur"
+          aria-placeholder="Gray Tow Truck Image"
         />
       </div>
     </div>
