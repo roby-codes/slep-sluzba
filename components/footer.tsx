@@ -4,7 +4,7 @@ import { AiOutlineMail, AiOutlineFieldTime } from "react-icons/ai";
 const Footer = () => (
   <footer className="py-12 px-6 bg-black/90 flex flex-col items-center gap-12">
     <div className="w-full max-w-5xl flex justify-center flex-wrap gap-4">
-      <div className="!w-[300px] lg:!w-[250px] rounded-md p-4 flex items-center gap-4 bg-white">
+      <div className="!w-[300px] rounded-md p-4 flex items-center gap-4 bg-white">
         <span className="h-full flex items-center rounded-md p-2 bg-[--theme-blue] text-white">
           <FiPhoneCall className="h-5 w-5" />
         </span>
@@ -17,7 +17,7 @@ const Footer = () => (
           </span>
         </div>
       </div>
-      <div className="!w-[300px] lg:!w-[250px] rounded-md p-4 flex items-center gap-4 bg-white">
+      <div className="!w-[300px] rounded-md p-4 flex items-center gap-4 bg-white">
         <span className="h-full flex items-center rounded-md p-2 bg-[--theme-blue] text-white">
           <AiOutlineMail className="h-5 w-5" />
         </span>
@@ -28,7 +28,7 @@ const Footer = () => (
           <span>goran5571@yahoo.de</span>
         </div>
       </div>
-      <div className="!w-[300px] lg:!w-[250px] rounded-md p-4 flex items-center gap-4 bg-white">
+      <div className="!w-[300px] rounded-md p-4 flex items-center gap-4 bg-white">
         <span className="h-full flex items-center rounded-md p-2 bg-[--theme-blue] text-white">
           <AiOutlineFieldTime className="h-5 w-5" />
         </span>
