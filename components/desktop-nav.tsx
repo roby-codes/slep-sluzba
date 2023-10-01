@@ -19,7 +19,7 @@ const DesktopNav = () => {
               <li key={index} className="relative py-6">
                 <Link
                   className={cn(
-                    "py-6 px-4 cursor-pointer text-black/75 uppercase font-medium relative z-10 duration-500",
+                    "py-6 px-4 cursor-pointer text-black/75 uppercase font-medium relative z-10 duration-300",
                     {
                       "text-white": link.url === url,
                     }

@@ -21,6 +21,31 @@ export const metadata: Metadata = {
       "Mi smo pouzdan pružalac šlep usluga u Velikom Gradištu, koji nudimo transport i dostavu vozila i robe. Posvećeni smo pružanju odlične usluge i zadovoljavanju potreba naših klijenata.",
     images: ["/assets/images/red-tow-truck.jpg"],
   },
+  icons: [
+    { rel: "apple-touch-icon", sizes: "180x180", url: "/apple-touch-icon.png" },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
+    },
+    {
+      rel: "mask-icon",
+      url: "/safari-pinned-tab.svg",
+      color: "#3341c2",
+    },
+  ],
+  manifest: "/site.webmanifest",
+  other: {
+    "msapplication-TileColor": "#3341c2",
+    "theme-color": "#3341c2",
+  },
 };
 
 export default function RootLayout({

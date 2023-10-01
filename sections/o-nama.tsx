@@ -114,9 +114,9 @@ const IntroSection = () => (
       >
         <Image
           className="hover:scale-105 duration-200"
-          layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           src={GrayTowTruckImage}
+          fill
           alt="Gray Tow Truck Image"
           placeholder="blur"
         />
@@ -133,9 +133,9 @@ const IntroSection = () => (
       >
         <Image
           className="hover:scale-105 duration-200"
-          layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           src={RedTowTruckImage}
+          fill
           alt="Red Tow Truck Image"
           placeholder="blur"
         />
@@ -152,9 +152,9 @@ const IntroSection = () => (
       >
         <Image
           className="hover:scale-105 duration-200"
-          layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           src={GrayTowTruckTwoImage}
+          fill
           alt="Gray Tow Two Truck Image"
           placeholder="blur"
         />

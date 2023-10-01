@@ -21,9 +21,9 @@ const IntroSection = () => (
     <div className="absolute h-full w-full inset-0 bg-black/60 pointer-events-none select-none">
       <Image
         className="h-full w-full -z-[10] pointer-events-none select-none"
+        style={{ objectFit: "cover" }}
         src={RedTowTruckImage}
-        layout="fill"
-        objectFit="cover"
+        fill
         priority={true}
         draggable={false}
         alt="Red Tow Truck Image"
@@ -280,7 +280,7 @@ const ContactSection = () => (
         >
           <Image
             className="hover:scale-105 duration-200"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             src={GrayTowTruckImage}
             alt="Gray Tow Truck Image"
             placeholder="blur"
