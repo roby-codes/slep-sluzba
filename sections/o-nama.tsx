@@ -116,7 +116,6 @@ const IntroSection = () => (
           className="hover:scale-105 duration-200"
           layout="fill"
           objectFit="cover"
-          objectPosition="right"
           src={GrayTowTruckImage}
           alt="Gray Tow Truck Image"
           placeholder="blur"
