@@ -314,19 +314,36 @@ const WhyChooseUsSection = () => (
         initial={{
           opacity: 0,
         }}
-        animate={{
+        whileInView={{
           opacity: 1,
         }}
         transition={{
           duration: 0.5,
         }}
+        viewport={{
+          once: true,
+        }}
       >
         Zašto izabrati nas?
       </motion.h2>
-      <p className="py-6 text-lg">
+      <motion.p
+        className="py-6 text-lg"
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.5,
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
         Posvećeni smo pružanju izvrsne korisničke usluge i osiguravanju da se
         vaša vozila i roba transportiraju sigurno i efikasno.
-      </p>
+      </motion.p>
       <div className="w-full pt-8 flex justify-center gap-8 flex-wrap">
         <motion.div
           className="py-8 px-4 min-w-[300px] max-w-xs flex-1 flex flex-col items-center gap-4 bg-white rounded-md"
