@@ -14,7 +14,7 @@ const MobileNav = () => {
   const { url } = useActiveLinkContext();
 
   return (
-    <nav className="md:hidden w-full bg-white relative">
+    <nav className="md:hidden w-full bg-white relative shadow-sm">
       <ul className="p-4 flex-1 flex bg-white">
         <li>
           <Link
