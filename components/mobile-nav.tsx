@@ -20,6 +20,7 @@ const MobileNav = () => {
           <Link
             className="flex p-2 gap-2 rounded-md items-center uppercase font-semibold bg-[--theme-blue] hover:bg-[--theme-lightblue] duration-200 focus:outline-none"
             href="/"
+            aria-label="Home Page"
             onClick={() => {
               setMenuOpen(false);
             }}
