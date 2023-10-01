@@ -14,7 +14,7 @@ const Footer = () => (
           </span>
           <span>
             <b>Tel</b>:{" "}
-            <a href="tel:0651185542" aria-label="Pozovite Nas">
+            <a href="tel:0651185542" aria-label="065 118 55 42">
               065 118 55 42
             </a>
           </span>
@@ -30,7 +30,7 @@ const Footer = () => (
             <b>Pošaljite E-mail</b>
           </span>
           <span>
-            <a href="mailto:goran5571@yahoo.de" aria-label="Pošaljite E-mail">
+            <a href="mailto:goran5571@yahoo.de" aria-label="goran5571@yahoo.de">
               goran5571@yahoo.de
             </a>
           </span>
