@@ -269,7 +269,7 @@ const ContactSection = () => (
       </div>
       <div className="flex-1 pt-6 p-0">
         <motion.div
-          className="rounded-md overflow-hidden"
+          className="w-[350px] md:w-[450px] h-[12rem] md:h-[18rem] rounded-md overflow-hidden relative"
           variants={{ ...contactAnimationVariants }}
           initial="initial"
           whileInView="animate"
@@ -282,6 +282,7 @@ const ContactSection = () => (
             className="hover:scale-105 duration-200"
             style={{ objectFit: "cover" }}
             src={GrayTowTruckImage}
+            fill
             alt="Gray Tow Truck Image"
             placeholder="blur"
           />
