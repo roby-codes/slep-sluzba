@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FiPhoneCall } from "react-icons/fi";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { GiReceiveMoney } from "react-icons/gi";
+import { AiTwotoneStar } from "react-icons/ai";
 import {
   Card,
   CardContent,
@@ -9,10 +13,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { FiPhoneCall } from "react-icons/fi";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { GiReceiveMoney } from "react-icons/gi";
-import { AiTwotoneStar } from "react-icons/ai";
 import RedTowTruckImage from "@/public/assets/images/red-tow-truck.jpg";
 import GrayTowTruckImage from "@/public/assets/images/gray-tow-truck.jpg";
 

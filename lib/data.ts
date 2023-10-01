@@ -11,8 +11,4 @@ export const pageLinks = [
     name: "Services",
     url: "/services",
   },
-  {
-    name: "Contacts",
-    url: "/contacts",
-  },
 ] as const;
