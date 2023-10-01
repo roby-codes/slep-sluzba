@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FiPhoneCall } from "react-icons/fi";
 import { useActiveLinkContext } from "@/context/active-link-context";
 import { pageLinks } from "@/lib/data";
-import { FiPhoneCall } from "react-icons/fi";
 import { cn } from "@/lib/utils";
 
 const DesktopNav = () => {
@@ -19,9 +19,9 @@ const DesktopNav = () => {
               <li key={index} className="relative py-6">
                 <Link
                   className={cn(
-                    "py-6 px-4 cursor-pointer transition text-black/75 uppercase font-medium",
+                    "py-6 px-4 cursor-pointer text-black/75 uppercase font-medium relative z-10 duration-500",
                     {
-                      "text-[--theme-blue]": link.url === url,
+                      "text-white": link.url === url,
                     }
                   )}
                   href={link.url}
@@ -30,11 +30,16 @@ const DesktopNav = () => {
                 </Link>
                 {link.url === url && (
                   <motion.span
-                    transition={{
-                      delay: 1,
+                    className="absolute left-0 top-1/2 -translate-y-1/2 py-6 w-full rounded-lg bg-[--theme-blue]"
+                    initial={{
+                      opacity: 0,
                     }}
-                    layoutId="activeLinkDesktop"
-                    className="absolute bottom-0 left-0 w-full border-b-[2.5px] border-[--theme-blue]"
+                    animate={{
+                      opacity: 1,
+                    }}
+                    transition={{
+                      duration: 0.5,
+                    }}
                   ></motion.span>
                 )}
               </li>

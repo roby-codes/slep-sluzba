@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`${kanit.className} font-light bg-slate-50`}>
         <div className="fixed -z-10 rounded-full top-[3rem] md:top-[7rem] right-[18rem] md:right-[26rem] lg:right-[30rem] xl:right-[36rem] h-[17rem] w-[14rem] lg:h-[25rem] lg:w-[21rem] xl:h-[30rem] xl:w-[25rem] blur-[8rem] lg:blur-[10.5rem] xl:blur-[12.5rem] bg-[--theme-blue]"></div>
-        <div className="fixed -z-10 rounded-full top-[15rem] md:top-[25rem] right-[2rem] md:right-[8rem] lg:right-[10rem] xl:right-[12rem] h-[17rem] w-[14rem] lg:h-[25rem] lg:w-[21rem] xl:h-[30rem] xl:w-[25rem] blur-[8rem] lg:blur-[10.5rem] xl:blur-[12.5rem] bg-[--theme-yellow]"></div>
+        <div className="fixed -z-10 rounded-full top-[15rem] md:top-[25rem] right-[2rem] md:right-[8rem] lg:right-[10rem] xl:right-[12rem] h-[17rem] w-[14rem] lg:h-[25rem] lg:w-[21rem] xl:h-[30rem] xl:w-[25rem] blur-[8rem] lg:blur-[10.5rem] xl:blur-[12.5rem] bg-[#3e3bfd]"></div>
         <Header />
         {children}
         <Footer />
