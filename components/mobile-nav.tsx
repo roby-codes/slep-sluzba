@@ -15,7 +15,7 @@ const MobileNav = () => {
 
   return (
     <nav className="md:hidden w-full bg-white relative shadow-sm">
-      <ul className="p-4 flex-1 flex bg-white">
+      <ul className="p-4 flex-1 flex items-center bg-white">
         <li>
           <Link
             className="flex p-2 gap-2 rounded-md items-center uppercase font-semibold bg-[--theme-blue] hover:bg-[--theme-lightblue] duration-200 focus:outline-none"
@@ -28,7 +28,7 @@ const MobileNav = () => {
             <AiOutlineHome className="h-6 w-6 text-white" />
           </Link>
         </li>
-        <li className="flex-1 flex items-center justify-center">
+        <li className="flex-1 flex justify-center">
           <span className="text-xl font-medium">TEL: 065 118 55 42</span>
         </li>
         <li>

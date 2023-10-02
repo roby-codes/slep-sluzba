@@ -13,7 +13,7 @@ const DesktopNav = () => {
   return (
     <nav className="px-4 hidden md:flex w-full justify-center items-center bg-white">
       <ul className="max-w-5xl flex-1 flex items-center gap-4">
-        <li className="flex-1 ">
+        <li>
           <ul className="flex justify-start gap-4">
             {pageLinks.map((link, index) => (
               <li key={index} className="relative py-6">
@@ -45,6 +45,9 @@ const DesktopNav = () => {
               </li>
             ))}
           </ul>
+        </li>
+        <li className="flex-1 flex justify-center">
+          <span className="text-xl font-medium">TEL: 065 118 55 42</span>
         </li>
         <li>
           <a

@@ -7,8 +7,4 @@ export const pageLinks = [
     name: "O Nama",
     url: "/o-nama",
   },
-  {
-    name: "Services",
-    url: "/services",
-  },
 ] as const;
