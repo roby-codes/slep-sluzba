@@ -1,7 +1,5 @@
 ## Šlep Služba - Veliko Gradište
 
-**Project Overview**
-
 An animated car towing service website designed and built using modern tech stack.
 
 **Tech Stack Used**
