@@ -52,16 +52,16 @@ const MobileNav = () => {
           <motion.div
             className="absolute -z-10 left-0 top-full w-full p-4 bg-slate-50 shadow-sm"
             initial={{
-              y: -350,
+              y: -200,
             }}
             animate={{
               y: 0,
             }}
             exit={{
-              y: -350,
+              y: -200,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.33,
             }}
           >
             <ul className="flex flex-col gap-2">
