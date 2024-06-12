@@ -44,7 +44,7 @@ const IntroSection = () => (
           duration: 0.5,
         }}
       >
-        Šlep Služba
+        Šlep Službaz
       </motion.h1>
       <motion.h2
         className="pt-2 text-2xl font-medium text-white"
