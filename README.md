@@ -10,4 +10,4 @@ An animated car towing service website designed and built using modern tech stac
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-000000?logo=tailwindcss)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-000000?logo=framer)
 
-> Developed By **[Robert Kovacs](https://robycodes.com)** - Find my other projects on **[robycodes.com](https://robycodes.com)**
+> Developed By **[HermesNova](https://hermesnova.com)**
